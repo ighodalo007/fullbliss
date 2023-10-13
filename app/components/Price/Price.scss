@@ -1,0 +1,22 @@
+.price_wrapper {
+  .card {
+    box-shadow: 0 0.125rem 0.25rem rgb(34 30 31 / 40%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      h3,
+      h5,
+      p {
+        color: var(--text-white);
+      }
+
+      .main-btn {
+        color: var(--text-white);
+        border-color: var(--bg-white);
+      }
+    }
+  }
+}

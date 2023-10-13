@@ -1,0 +1,117 @@
+.services_wrapper {
+  .service-item-wrap {
+    background-color: var(--bg-primary);
+
+    .tab-content {
+      @media (max-width: 900px) {
+        margin-bottom: 1rem;
+      }
+
+      @media (max-width: 1450px) {
+        img {
+          width: 100%;
+        }
+      }
+      // img {
+      //   width: 100%;
+      // }
+    }
+
+    .position-relative {
+      transform: translate(-5%, 5%);
+    }
+
+    .my-nav {
+      margin-left: 7rem;
+      .my-item {
+        div {
+          &:nth-child(1) {
+            margin-left: 0.6625rem;
+          }
+          &:nth-child(2) {
+            margin-left: -2.9375rem;
+          }
+          &:nth-child(3) {
+            margin-left: -5.375rem;
+          }
+          &:nth-child(4) {
+            margin-left: -7.8125rem;
+          }
+
+          @media (max-width: 1191px) {
+            &:nth-child(1) {
+              margin-left: -4.4375rem;
+            }
+            &:nth-child(2) {
+              margin-left: -6.9375rem;
+            }
+            &:nth-child(3) {
+              margin-left: -9.375rem;
+            }
+            &:nth-child(4) {
+              margin-left: -12.8125rem;
+            }
+          }
+        }
+        .my-link {
+          display: block;
+          // margin-bottom: 2.8125rem;
+          margin-bottom: 0.5rem;
+
+          p,
+          h5 {
+            padding-left: 6.875rem;
+            display: block;
+            text-align: left;
+          }
+
+          p {
+            span {
+              color: var(--secondary-text);
+            }
+          }
+
+          .service-icon {
+            height: 5.625rem;
+            width: 5.625rem;
+
+            background-color: var(--secondary-color);
+            line-height: 5.625rem;
+            text-align: center;
+            border-radius: 100%;
+            float: left;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: var(--primary-color);
+              color: var(--text-white);
+              box-shadow: 0 0.125rem 1.25rem rgb(34 30 31 / 40%);
+            }
+          }
+
+          @media (max-width: 1191px) {
+            margin-bottom: 0.8125rem;
+            overflow: hidden;
+          }
+
+          h5 {
+            margin-bottom: 0.375rem;
+          }
+        }
+
+        @media (max-width: 990px) {
+          div {
+            margin: 0 !important;
+          }
+        }
+      }
+      @media (max-width: 1191px) {
+        padding: 1.5rem 0.5rem;
+      }
+      @media (max-width: 1450px) {
+        margin-left: 0;
+      }
+    }
+  }
+}

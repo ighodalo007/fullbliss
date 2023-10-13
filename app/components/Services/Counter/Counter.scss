@@ -1,0 +1,27 @@
+.counter {
+  background-image: url("../../../../public/images/counter-bg.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.125rem;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--bg-black);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  p,
+  h1 {
+    position: relative;
+    color: var(--text-white);
+    z-index: 3;
+  }
+}
